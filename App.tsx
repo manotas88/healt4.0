@@ -13,9 +13,11 @@ const App: React.FC = () => {
   const [isCalibrated, setIsCalibrated] = useState(false);
   const [difficultyProfile, setDifficultyProfile] = useState<DifficultyProfile | null>(null);
 
-  const handleCalibrationComplete = (profile: DifficultyProfile) => {
+  const handleCalibrationComplete = (profile: DifficultyProfile, recommendedGame: string) => {
     setDifficultyProfile(profile);
     setIsCalibrated(true);
+    // Automatic redirection to the prescribed module
+    setActiveGame(recommendedGame);
   };
 
   const handleSelectGame = (gameId: string) => {
