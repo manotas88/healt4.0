@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Copy of NeuroBreath Therapy",
+  "description": "A gamified digital therapeutic app combining breath control biofeedback with cognitive training for neuroprotection.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}

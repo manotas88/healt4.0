@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>NeuroBreath</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              medical: {
+                50: '#f0f9ff',
+                100: '#e0f2fe',
+                500: '#0ea5e9',
+                600: '#0284c7',
+                900: '#0c4a6e',
+              },
+              calm: {
+                bg: '#e0f7fa',
+                accent: '#00bcd4',
+                secondary: '#006064',
+                highlight: '#ffca28'
+              }
+            },
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'bounce-small': 'bounce 0.5s infinite'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Prevent pull-to-refresh on mobile for game stability */
+      body {
+        overscroll-behavior-y: none;
+        touch-action: none;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-800 antialiased overflow-hidden">
+    <div id="root"></div>
+  </body>
+</html>
